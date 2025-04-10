@@ -1,0 +1,16 @@
+usuario = input('Digite seu nome completo: ')
+idade = input('Digite seu idade: ')
+
+if usuario and idade:
+    print(f'Seu nome é {usuario}.')
+    print(f'Seu nome invertido é {usuario[::-1]}.')
+    if "" in usuario == True:
+        print("Seu nome tem espacos")
+    else:
+        print('Seu nome não contem espaços')
+    print(f'Seu nome contem {(usuario.count(' '))} espaços.')
+    print(f'Seu nome tem {len(usuario)} letras.')
+    print(f'A primeria letra do seu nome é {usuario[0]}')
+    print(f'A ultima letra do seu nome é {usuario[-1]}')
+else:
+    print("Desculpe, você deixou campos vazios.")
